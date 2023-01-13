@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    overflow: hidden;
+}
+
+/* hyperlinks style */
+a:link {
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+}
+
+a:visited {
+    color: rgb(83, 83, 83);
+}
+
+a:hover {
+    color: rgb(147, 145, 145);
+}
+
+a:active {
+    color: rgb(83, 83, 83);
+}
+
+li {
+    margin-left: 10px;
+}
+
+/* container style */
+.container {
+    border: 2px solid rgba(247, 247, 247, 0.727);
+}
+
+.first {
+    border: transparent;
+}
+
+nav {
+    background-color: rgba(247, 247, 247, 0.727);
+    text-align: center;
+}
+
+.active-page {
+    color: rgb(147, 145, 145);
+}

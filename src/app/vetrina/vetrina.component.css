@@ -1,0 +1,64 @@
+img {
+    cursor: pointer;
+}
+
+ol {
+    margin-bottom: 0;
+}
+
+h5 {
+    color: rgb(83, 83, 83);
+}
+
+.ritirato {
+    color: rgb(184, 182, 182);
+    text-decoration: line-through;
+    font-size: 17px;
+}
+
+mat-icon {
+    font-size: 22px;
+}
+
+button {
+    width: 4%;
+    border: transparent;
+    padding: 15px 3px 10px 3px;
+    border-radius: 9px;
+    margin-right: 10px;
+}
+
+
+button:hover {
+    background-color: rgba(247, 247, 247, 0.727);
+}
+
+.day {
+    height: 14px;
+    width: 48px;
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    border-bottom: 1px solid #cfcfcf;
+    padding-top: 2px;
+}
+
+.testo-icone {
+    font-size: 13px;
+    font-weight: bold;
+    width: 4%;
+}
+
+.card {
+    /* margin-left: 15%; */
+    left: 21%;
+    width: 15rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card:hover {
+    object-fit: cover;
+    opacity: 0.7;
+}
