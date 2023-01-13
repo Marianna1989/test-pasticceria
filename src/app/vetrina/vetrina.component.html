@@ -1,124 +1,104 @@
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+<nav
+  style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+  aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page"><a href=" ">HOME</a></li>
+    <li class="breadcrumb-item active" aria-current="page">
+      <a href=" ">HOME</a>
+    </li>
   </ol>
 </nav>
 <div>
   <div class="container first">
-  <div class="row">
-  <div class="day">DAY</div>
-  <button aria-label="add a day" (click)="addOneDay()">
-    <!-- <mat-icon>add</mat-icon> --> 
-    {{day}}
-  </button>
-  <!-- <span class="testo-icone">AUMENTA GIORNO: </span><span style="margin-right:10px;">{{day}}</span>  -->
-  <div class="day">RESET</div>
-  <button aria-label="reset day" (click)="resetDay()">
-    <mat-icon>restart_alt</mat-icon>
-  </button>
-  <!-- <span class="testo-icone">RESETTA GIORNO</span> -->
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col">
-        <div 
-        class="card">
-        <a routerLink="/cheesecake">
-            <img 
-            src="../../assets/imgs/cheesecake2.jpg" 
-            class="card-img-top" 
-            alt="cheesecake"
-            width="286px"
-            height="180px">
-            <div class="card-body">
-              <h5 *ngIf="!ritirato"class="card-title">CHEESCAKE &#8364; {{cheesecakePrezzo}} </h5>
-              <h5 *ngIf="ritirato" class="ritirato">RITIRATO DALLA VENDITA</h5>
-            </div>
-        </a>
-          </div>
+    <div class="row">
+
+      <button aria-label="add a day" (click)="addOneDay()">
+        <div class="day">DAY</div>
+        {{day}}
+      </button>
+      <button aria-label="reset day" (click)="resetDay()">
+        <div class="day">RESET</div>
+        <mat-icon>restart_alt</mat-icon>
+      </button>
     </div>
-    <div class="col">
-        <div class="card">
-          <a routerLink="/tiramisu">
-            <img 
-            src="../../assets/imgs/tiramisu.jpg" 
-            class="card-img-top" 
-            alt="tiramisu"
-            width="286px"
-            height="180px">
-            <div class="card-body">
-              <h5 *ngIf="!ritirato" class="card-title">TIRAMISU &#8364; {{tiramisuPrezzo}}</h5>
-              <h5 *ngIf="ritirato" class="ritirato">RITIRATO DALLA VENDITA</h5>
-            </div>
-          </a>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <a routerLink="/cheesecake">
+              <img src="../../assets/imgs/cheesecake2.jpg" class="card-img-top" alt="cheesecake" width="286px"
+                height="180px">
+              <div class="card-body">
+                <h5 *ngIf="!ritirato" class="card-title">CHEESCAKE &#8364; {{cheesecakePrezzo}} </h5>
+                <h5 *ngIf="ritirato" class="ritirato">RITIRATO DALLA VENDITA</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a routerLink="/tiramisu">
+              <img src="../../assets/imgs/tiramisu.jpg" class="card-img-top" alt="tiramisu" width="286px"
+                height="180px">
+              <div class="card-body">
+                <h5 *ngIf="!ritirato" class="card-title">TIRAMISU &#8364; {{tiramisuPrezzo}}</h5>
+                <h5 *ngIf="ritirato" class="ritirato">RITIRATO DALLA VENDITA</h5>
+              </div>
+            </a>
           </div>
 
-    </div>
-    <div class="col">
-        <div class="card">
-          <a routerLink="/cupcakes">
-            <img src="../../assets/imgs/cupcakes.jpg" 
-            class="card-img-top" 
-            alt="cupcakes"
-            width="286px"
-            height="180px">
-            <div class="card-body">
-              <h5 *ngIf="!ritirato" class="card-title">CUPCAKES &#8364; {{cupcakesPrezzo}}</h5> 
-              <h5 *ngIf="ritirato" class="ritirato">RITIRATO DALLA VENDITA</h5>               
-            </div>
-          </a>
-          </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col">
-        <div class="card">
-          <a routerLink="/strudel">
-            <img src="../../assets/imgs/strudel.jpg" 
-            class="card-img-top" 
-            alt="strudel"
-            width="286px"
-            height="180px">
-            <div class="card-body">
-              <h5 *ngIf="!ritirato" class="card-title">STRUDEL &#8364; {{strudelPrezzo}}</h5>
-              <h5 *ngIf="ritirato" class="ritirato">RITIRATO DALLA VENDITA</h5>
-            </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a routerLink="/cupcakes">
+              <img src="../../assets/imgs/cupcakes.jpg" class="card-img-top" alt="cupcakes" width="286px"
+                height="180px">
+              <div class="card-body">
+                <h5 *ngIf="!ritirato" class="card-title">CUPCAKES &#8364; {{cupcakesPrezzo}}</h5>
+                <h5 *ngIf="ritirato" class="ritirato">RITIRATO DALLA VENDITA</h5>
+              </div>
             </a>
           </div>
-    </div>
-    <div class="col">
-        <div class="card">
-          <a routerLink="/torta-paradiso">
-            <img src="../../assets/imgs/torta-paradiso.jpg" 
-            class="card-img-top" 
-            alt="torta paradiso"
-            width="286px"
-            height="180px">
-            <div class="card-body">
-              <h5 *ngIf="!ritirato" class="card-title">TORTA PARADISO &#8364; {{paradisoPrezzo}}</h5>
-              <h5 *ngIf="ritirato" class="ritirato">RITIRATO DALLA VENDITA</h5>
-            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <a routerLink="/strudel">
+              <img src="../../assets/imgs/strudel.jpg" class="card-img-top" alt="strudel" width="286px" height="180px">
+              <div class="card-body">
+                <h5 *ngIf="!ritirato" class="card-title">STRUDEL &#8364; {{strudelPrezzo}}</h5>
+                <h5 *ngIf="ritirato" class="ritirato">RITIRATO DALLA VENDITA</h5>
+              </div>
             </a>
           </div>
-    </div>
-    <div class="col">
-        <div class="card">
-          <a routerLink="/torta-fragole">
-            <img src="../../assets/imgs/torta-fragole.jpg" 
-            class="card-img-top" 
-            alt="torta fragole"
-            width="286px"
-            height="180px">
-            <div class="card-body">
-              <h5 *ngIf="!ritirato" class="card-title">TORTA FRAGOLE &#8364; {{fragolePrezzo}}</h5>
-              <h5 *ngIf="ritirato" class="ritirato">RITIRATO DALLA VENDITA</h5>
-            </div>
-          </a>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a routerLink="/torta-paradiso">
+              <img src="../../assets/imgs/torta-paradiso.jpg" class="card-img-top" alt="torta paradiso" width="286px"
+                height="180px">
+              <div class="card-body">
+                <h5 *ngIf="!ritirato" class="card-title">TORTA PARADISO &#8364; {{paradisoPrezzo}}</h5>
+                <h5 *ngIf="ritirato" class="ritirato">RITIRATO DALLA VENDITA</h5>
+              </div>
+            </a>
           </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a routerLink="/torta-fragole">
+              <img src="../../assets/imgs/torta-fragole.jpg" class="card-img-top" alt="torta fragole" width="286px"
+                height="180px">
+              <div class="card-body">
+                <h5 *ngIf="!ritirato" class="card-title">TORTA FRAGOLE &#8364; {{fragolePrezzo}}</h5>
+                <h5 *ngIf="ritirato" class="ritirato">RITIRATO DALLA VENDITA</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-</div>
-</div>
-<footer>
-  &#169; Marianna Colombo 2023
-</footer>
+  </div>
+  <footer>
+    &#169; Marianna Colombo 2023
+  </footer>

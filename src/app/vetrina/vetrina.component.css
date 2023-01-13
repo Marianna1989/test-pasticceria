@@ -23,7 +23,7 @@ mat-icon {
 button {
     width: 4%;
     border: transparent;
-    padding: 15px 3px 10px 3px;
+    padding-top: 4px;
     border-radius: 9px;
     margin-right: 10px;
 }
@@ -34,14 +34,8 @@ button:hover {
 }
 
 .day {
-    height: 14px;
-    width: 48px;
     font-size: 10px;
-    text-align: center;
-    position: relative;
-    left: 50px;
     border-bottom: 1px solid #cfcfcf;
-    padding-top: 2px;
 }
 
 .testo-icone {
@@ -51,7 +45,6 @@ button:hover {
 }
 
 .card {
-    /* margin-left: 15%; */
     left: 21%;
     width: 15rem;
     margin-top: 5%;
